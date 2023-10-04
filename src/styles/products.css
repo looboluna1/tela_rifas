@@ -1,0 +1,149 @@
+.information_container{
+    display: flex;
+    flex-direction: column;
+    margin: 0.625rem;
+    margin-top: 1rem;
+}
+.price_product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price_product p{
+    font-size: 16px;
+}
+.price_product span{
+    background-color: #00307a;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+}
+
+.section_information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.section_information p{
+    font-size: 15px;
+    color: #808080;
+}
+.section_information span{
+    background-color: #f2f2f2;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 2px;
+    color: black;
+}
+.Fa{
+    color: #00307a;
+}
+.Tw{
+    color: #44a3d3;
+}
+.Whats{
+    color: #4dc247;
+    
+}
+.Insta circle {
+    fill: linear-gradient(45deg, #fd5d94, #c13584, #833ab4);
+  }
+.select_value{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+/* .qunatity_Select{
+    display: flex;
+    flex-direction: column;
+} */
+.quantity_continer{
+    border-radius: 8px;
+    height: 50vh;
+    width: 95vw;
+    background-color: white;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;  */
+    gap: 0.625rem;
+    margin: 0.625rem;
+    align-items: center;
+    justify-content: center;
+}
+.quantity_continer .desc{
+    text-align: center;
+    font-size: 15px;
+    color: rgba(33,37,41,0.75);
+    margin-top: 0.8125rem;
+}
+.left-column, .right-column  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.button_quantity{
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    height: 2.1875rem;
+    width: 70%;
+    margin: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input_value_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.input_value{
+    font-size: 20px;
+    text-align: center;
+    height: 1.8rem;
+    width: 55%;
+    background-color: white;
+    border-radius: 4px;
+    border: solid 1px #e4e4e4;
+    
+}
+
+.button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #198754;
+    margin: 0.625rem;
+    padding: 0.625rem;
+    gap: 3rem;
+    border-radius: 5px;
+    color: white;
+    
+    
+}
+.sec{
+    font-size: 1.25rem;
+    align-items: center;
+}
+.total_value{
+    font-size: 1.25rem;
+}
+.gg-check-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 100px
+}
+.button_checkout{
+    
+    display: flex;
+    color: white;
+    margin-left: 1rem;
+}
+

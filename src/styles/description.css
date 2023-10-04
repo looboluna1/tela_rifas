@@ -1,0 +1,19 @@
+.description_section{
+    -webkit-box-shadow: 0 4px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 3px rgba(0,0,0,.08);
+    background-color: #fff;
+    color: #171717;
+    border-radius: 10px;
+    border: none;
+}
+
+.descrition_container{
+    max-height: 300px;
+    overflow: scroll;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}

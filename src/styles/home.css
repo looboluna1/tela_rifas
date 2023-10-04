@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(to bottom, #00307a 50%, #e4e4e4 50%);
+}
+.home{
+    background: #e4e4e4;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px 25px 0px 0px;
+}
+h2{
+    padding: 15px 0px 0px 15px;
+}
+.sorte{
+    color: #5a5a5a;
+    font-size: 1rem;
+}
+.Color{
+    height: 100%;
+    border-radius: 9px 9px 0px 0px;
+    background-color: #e4e4e4;
+    margin: 0;
+    padding: 0;
+
+}

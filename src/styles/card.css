@@ -1,0 +1,60 @@
+/* ul{
+    background-color: #e4e4e4;
+} */
+.li_card{
+    box-shadow: 0 4px 3px rgba(0,0,0,.08);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0.625rem;
+}
+.img_card{
+    width: 30%;
+    border-radius: 10px;
+}
+.container_informations{
+    margin: 0.625rem;
+}
+
+.destaque_li{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.destaque_img{
+    width: 100%;
+    height: 25%;
+    border-radius: 10px;
+}
+
+@keyframes blink {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #198754; /* Cor de fundo quando está piscando */
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  .blinking-text {
+    animation: blink 1.5s infinite;
+    display: flex;
+    width: 150px;
+    height: 20px;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    border-radius: 5px;
+  }
