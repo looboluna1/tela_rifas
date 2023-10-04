@@ -7,15 +7,17 @@ import { AppRoutes } from './AppRoutes'
 import './styles/index.css'
 
 
+
 function App() {
   
 
   return (
     <>
       <Header />
-      <Home/>
+        
+      <AppRoutes /> 
       <section className='Color'>
-        <AppRoutes /> {/* Renderize suas rotas aqui */}
+        
       </section>
       <Footer />
     </>

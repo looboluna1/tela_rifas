@@ -1,46 +1,44 @@
+import React, { useState } from "react";
 import { AiFillFacebook } from 'react-icons/ai';
 import { FaWhatsappSquare } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
-import { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import { Description } from './description';
 import { CardDestque } from '../card/destaqueCard';
 import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
+export function Products({ product }) {
+  const location = useLocation();
+  const selectedProduct = location.state?.selectedProduct; //Aqui esta dando Undefined
+  console.log(selectedProduct)
+  
+//   const { productId } = useParams();
 
-export function Products({product}) {
-    const [selectedProduct, setSelectedProduct] = useState(null);
-
-    const handleProductClick = (product) => {
-      setSelectedProduct(product);
-    };
   const [quantity, setQuantity] = useState(0);
   const [total, setTotal] = useState(0); 
-//   const productPrice = price;
 
   const handleQuantityChange = (option) => {
     const newQuantity = quantity + option;
     setQuantity(newQuantity);
-    // setTotal(newQuantity * productPrice);
-    setTotal((newQuantity * 0.04).toFixed(2)); // Atualize o total com base no valor do produto e na nova quantidade
+    setTotal((newQuantity * 0.04).toFixed(2));
   };
-
+  
   return (
+    
     <>
-        {selectedProduct ? (
-        <Link to={`/product/${selectedProduct.productId}`}>
-          <CardDestque
-            productImg={selectedProduct.image}
-            productName={selectedProduct.name}
-            productDescription={selectedProduct.description}
-          />
-        </Link>
+      {product ? (
+        <CardDestque
+          productImg={product.image}
+          productName={product.name}
+          productDescription={product.description}
+        />
       ) : (
         <CardDestque
           productImg={"URL da imagem padrão"}
           productName="Nome do Produto Padrão"
           productDescription="Descrição do Produto Padrão"
-          onClick={() => handleProductClick(yourDefaultProductObject)}
         />
       )}
 
@@ -90,20 +88,19 @@ export function Products({product}) {
                 </button>
               </div>
               <div className="input_value_section">
-              <button className="body" onClick={() => handleQuantityChange(-1)}><i class="gg-remove"></i></button>
-              <input disabled className="input_value" value={quantity} />
-              <button className="body" onClick={() => handleQuantityChange(1)}><i class="gg-add"></i></button>
+                <button className="body" onClick={() => handleQuantityChange(-1)}><i className="gg-remove"></i></button>
+                <input disabled className="input_value" value={quantity} />
+                <button className="body" onClick={() => handleQuantityChange(1)}><i className="gg-add"></i></button>
               </div>
             </div>
             <div className='button_container'>
                 <button className='button_checkout'>
-                    <i class="gg-check-o"></i> 
-                    <span className='title3 sec'>Quero Particiapar</span>
+                    <i className="gg-check-o"></i> 
+                    <span className='title3 sec'>Quero Participar</span>
                 </button>
                 <span className='body total_value'>R$ {total}</span>
             </div>
           </div>
-          
         </div>
         <Description/>
       </div>
